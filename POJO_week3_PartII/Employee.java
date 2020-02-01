@@ -8,10 +8,10 @@ class Employee {
 	private String employeeAddress;
 	private short employeeAge;
 	private double employeeSalary;
-	private enum employeePosition;
+	private EmployeePosition employeePosition;
 	
 
-	public Employee(int employeeId, String employeeName, String employeeSurname, String employeePhone, String employeeAddress, short employeeAge, double employeeSalary, enum employeePosition) {
+	public Employee(int employeeId, String employeeName, String employeeSurname, String employeePhone, String employeeAddress, short employeeAge, double employeeSalary, EmployeePosition employeePosition) {
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.employeeSurname = employeeSurname;
@@ -86,11 +86,11 @@ class Employee {
 	}
 	
 	// Должность сотрудника
-	public enum getEmployeePosition() {
+	public EmployeePosition getEmployeePosition() {
 		return employeePosition;
 	}
 
-	public void setEmployeePosition(enum employeePosition) {
+	public void setEmployeePosition(EmployeePosition employeePosition) {
 		this.employeePosition = employeePosition;
 	}
 }

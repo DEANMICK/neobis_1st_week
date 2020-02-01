@@ -1,15 +1,17 @@
+import java.util.Date;
+
 class Cake {
 
     private int cakeId;
     private String cakeName;
-    private enum cakeSize;
+    private CakeSize cakeSize;
 	private Date cakeData;
-	private enum cakeFilling;
+	private CakeFilling cakeFilling;
 	private int employeeId;
     private double cakePrice;
 
 		
-	public Cake(int cakeId, String cakeName, enum cakeSize, Date cakeData, enum cakeFilling, int employeeId, double cakePrice) {
+	public Cake(int cakeId, String cakeName, CakeSize cakeSize, Date cakeData, CakeFilling cakeFilling, int employeeId, double cakePrice) {
 		this.cakeId = cakeId;
  		this.cakeName = cakeName;
         this.cakeSize = cakeSize;
@@ -40,11 +42,11 @@ class Cake {
     }
 
     // Размер торта
-    public enum getCakeSize() {
+    public CakeSize getCakeSize() {
         return cakeSize;
     }
 
-	public void setCakeSize(enum cakeSize) {
+	public void setCakeSize(CakeSize cakeSize) {
         this.cakeSize = cakeSize;
     }	
 
@@ -58,11 +60,11 @@ class Cake {
 	}	
 	
 	// Начинка торта
-	public enum getCakeFilling() {
+	public CakeFilling getCakeFilling() {
 		return cakeFilling;
 	}
 
-	public void setCakeFilling(enum cakeFilling) {
+	public void setCakeFilling(CakeFilling cakeFilling) {
 		this.cakeFilling = cakeFilling;
 	}
 
