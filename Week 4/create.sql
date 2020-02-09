@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`cake` (
 	`Price` DOUBLE NOT NULL,
 	PRIMARY KEY (`id`),
      	FOREIGN KEY (`employee_id`)
-     	REFERENCES `cake_shop`.`employee` (`id`))
+     	REFERENCES `cake_shop`.`employee` (`id`) ON DELETE CASCADE)
 	ENGINE = INNODB;
 
 -- -----------------------------------------------------
@@ -63,9 +63,9 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`orders` (
 	`pay` BOOLEAN NOT NULL,
 	PRIMARY KEY (`id`),
     	FOREIGN KEY (`client_id`)
-    	REFERENCES `cake_shop`.`client` (`id`),
+    	REFERENCES `cake_shop`.`client` (`id`) ON DELETE CASCADE,
     	FOREIGN KEY (`cake_id`)
- 	REFERENCES `cake_shop`.`cake` (`id`))
+ 	REFERENCES `cake_shop`.`cake` (`id`) ON DELETE CASCADE)
 	ENGINE = INNODB;
      
 -- -----------------------------------------------------
@@ -79,6 +79,6 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`sales` (
 	`Date` Date NOT NULL,
 	PRIMARY KEY (`id`),
 		FOREIGN KEY (`cake_id`)
-		REFERENCES `cake_shop`.`cake` (`id`))
+		REFERENCES `cake_shop`.`cake` (`id`) ON DELETE CASCADE)
 	ENGINE = INNODB;
 	
