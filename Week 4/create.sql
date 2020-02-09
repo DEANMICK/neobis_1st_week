@@ -34,13 +34,9 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`cake` (
 	`Filling` VARCHAR(50) NOT NULL,
 	`employee_id` INT NOT NULL,
 	`Price` DOUBLE NOT NULL,
-	PRIMARY KEY (`id`, `employee_id`),
-	INDEX `fk_cake_employee_index` (`employee_id` ASC),
-	CONSTRAINT `fk_cake_employee`
+	PRIMARY KEY (`id`),
      	FOREIGN KEY (`employee_id`)
-     	REFERENCES `cake_shop`.`employee` (`id`)
-     	ON DELETE NO ACTION
-	 	ON UPDATE NO ACTION)
+     	REFERENCES `cake_shop`.`employee` (`id`))
 	ENGINE = INNODB;
 
 -- -----------------------------------------------------
@@ -65,19 +61,11 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`orders` (
 	`cake_id` INT NOT NULL,
 	`Date` DATE NOT NULL,
 	`pay` BOOLEAN NOT NULL,
-	PRIMARY KEY (`id`, `client_id`, `cake_id`),
-	INDEX `fk_orders_client_index` (`client_id` ASC),
-	INDEX `fk_orders_cake_index` (`cake_id` ASC),
-	CONSTRAINT `fk_orders_client`
+	PRIMARY KEY (`id`),
     	FOREIGN KEY (`client_id`)
-    	REFERENCES `cake_shop`.`client` (`id`)
-    	ON DELETE NO ACTION
-    	ON UPDATE NO ACTION,
-	CONSTRAINT `fk_orders_cake`
+    	REFERENCES `cake_shop`.`client` (`id`),
     	FOREIGN KEY (`cake_id`)
- 		REFERENCES `cake_shop`.`cake` (`id`)
-    	ON DELETE NO ACTION
-    	ON UPDATE NO ACTION)
+ 	REFERENCES `cake_shop`.`cake` (`id`))
 	ENGINE = INNODB;
      
 -- -----------------------------------------------------
@@ -89,15 +77,8 @@ CREATE TABLE IF NOT EXISTS `cake_shop`.`sales` (
 	`cake_id` INT NOT NULL,
 	`amount` INT NOT NULL,
 	`Date` Date NOT NULL,
-	PRIMARY KEY (`id`, `cake_id`),
-	INDEX `fk_sales_cake_index` (`cake_id` ASC),
-	CONSTRAINT `fk_sales_cake`
+	PRIMARY KEY (`id`),
 		FOREIGN KEY (`cake_id`)
-		REFERENCES `cake_shop`.`cake` (`id`)
-		ON DELETE NO ACTION
-    	ON UPDATE NO ACTION)
-	ENGINE = INNODB;
-		ON DELETE NO ACTION
-    	ON UPDATE NO ACTION)
+		REFERENCES `cake_shop`.`cake` (`id`))
 	ENGINE = INNODB;
 	
