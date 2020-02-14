@@ -1,0 +1,15 @@
+После создания проекта я запустил его, затем указал ссылку (http://localhost:8080/employee/allEmployee) в Postman.
+
+1) GET Request(pic01.png)
+Указав адрес "http://localhost:8080/employee/allEmployee" я получил пустой запрос, то есть в моей БД нет данных. Затем перехожу к POST Request
+
+2) POST Request(pic02.png)
+Указав адрес "http://localhost:8080/employee/addEmployee" я выполняю POST Request чтобы добавить работника в БД(pic03.png). Затем перехожу к PUT Request 
+
+3) PUT Request(pic04.png)
+Указав адрес "http://localhost:8080/employee/update/{id}" я выполняю PUT Request чтобы обновить(изменить) данные работника в БД(pic05.png). Затем перехожу к DELETE Request 
+
+4) DELETE Request(pic06.png)
+Указав адрес "http://localhost:8080/employee/delete/{id}" я выполняю DELETE Request чтобы удалить работника из БД(pic07.png).
+
+
