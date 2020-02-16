@@ -6,10 +6,12 @@ class fooBar{
 		System.out.print("Введите число: ");
 		int number = scanner.nextInt();
 		if(number % 2 == 0) {
-			System.out.println("foo");
+			System.out.printf("foo " + "|" + " целое число которое было дано: %d", number);
+			System.out.println();
 		}
 		else {
-			System.out.println("bar");
+			System.out.printf("bar " + "|" + " целое число которое было дано: %d", number);
+			System.out.println();
 		}
 	}
 }

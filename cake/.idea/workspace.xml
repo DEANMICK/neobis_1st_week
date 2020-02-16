@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966e6861-3ad6-4f88-bdf3-376d46c5eb18" name="Default" comment="" />
+    <list default="true" id="966e6861-3ad6-4f88-bdf3-376d46c5eb18" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +15,21 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -28,12 +43,16 @@
     <option name="width" value="1340" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectId" id="1Xq011qL3Ud03BIOSRaWzeDRG5W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -97,6 +116,28 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="617" y="197" width="676" height="710" key="#Main" timestamp="1581758204565">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="617" y="197" width="676" height="710" key="#Main/0.27.1920.1053@0.27.1920.1053" timestamp="1581758204565" />
+    <state width="1874" height="157" key="GridCell.Tab.0.bottom" timestamp="1581759547327">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="157" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581759547327" />
+    <state width="1874" height="157" key="GridCell.Tab.0.center" timestamp="1581759547325">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="157" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581759547325" />
+    <state width="1874" height="157" key="GridCell.Tab.0.left" timestamp="1581759547325">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="157" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581759547325" />
+    <state width="1874" height="157" key="GridCell.Tab.0.right" timestamp="1581759547326">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="157" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581759547326" />
   </component>
   <component name="masterDetails">
     <states>
