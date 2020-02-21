@@ -22,6 +22,10 @@ public class EmployeeController {
     }
 
 
+
+    /*С помощью метода POST добавляю новых сотрудников по указанным параметрам(имя, фамилия,
+    номер телефона, адрес, возраст, зарплата, должность). В случае удачного добавления выводит "Saved"
+   */
     @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
     public @ResponseBody String addNewEmployee (@RequestParam String name, @RequestParam String surname,
                                                 @RequestParam String phone, @RequestParam String address,
@@ -40,6 +44,8 @@ public class EmployeeController {
     }
 
 
+    /*Метод DELETE удаляет данные из БД. В данном случае по  ID
+        */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteEmployee(@PathVariable("id") int id) {
         return employeeRepository.findById(id)
@@ -50,6 +56,10 @@ public class EmployeeController {
     }
 
 
+    /*
+    * Метод PUT заменяет все текущие данные.
+    *
+    * */
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Employee> updateEmployee(@PathVariable("id") int id,
                                                    @RequestBody Employee employee) {
@@ -68,6 +78,9 @@ public class EmployeeController {
     }
 
 
+    /*С помощью метода GET запрашиваю данные из БД.
+        Запросы с использованием GET должны только извлекать данные.
+     */
     @RequestMapping(value = "/allEmployee", method = RequestMethod.GET)
     public @ResponseBody Iterable<Employee> getAllEmployee() {
         return employeeRepository.findAll();
