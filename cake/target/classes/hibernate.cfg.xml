@@ -16,7 +16,7 @@
             root
         </property>
         <property name="hibernate.connection.password">
-            Mpower1704
+            password
         </property>
         <mapping resource="Employee.hbm.xml"/>
     </session-factory>
